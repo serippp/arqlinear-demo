@@ -1,6 +1,6 @@
 # ARQ LINEAR — Demonstração comercial
 
-Website 100% estático, em português de Portugal. Não é o website oficial da empresa e ainda não tem aprovação do proprietário. Não foi publicado nem foi contactado o proprietário.
+Website 100% estático, em português de Portugal. Não é o website oficial da empresa e ainda não tem aprovação do proprietário. Esta revisão foi preparada para análise local, a partir da versão existente no GitHub. Não foram efetuadas alterações no repositório nem publicação desta revisão; o proprietário não foi contactado.
 
 ## Abrir
 
@@ -20,11 +20,11 @@ Não achatar a estrutura, renomear `assets` ou utilizar Git LFS para estes fiche
 
 ## Vídeos e fotografias
 
-- Hero: `assets/videos/hero.mp4`, trecho de 10 segundos (10–20 s) do **Timeline 2.mp4**. H.264 Main, yuv420p, 720×1280, 30 fps, sem áudio, faststart. Aproximadamente 1,54 MB.
-- Filme: `assets/videos/projetos.mp4`, versão integral comprimida do **Timeline 1.mp4**, cerca de 19,35 s. H.264 Main, yuv420p, 720×1280, 30 fps, AAC e faststart. Aproximadamente 6,07 MB.
-- Os vídeos originais em Downloads foram apenas lidos e permanecem intactos. As duas versões otimizadas estão incluídas neste ZIP, cada uma utilizada numa única secção.
+- Hero: `assets/videos/hero.mp4`, **Timeline 1.mp4 integral**, sem cortes, sem repetição artificial, sem aceleração. Duração do original conservada: 19,35 s, 580 fotogramas e todos os tempos de apresentação. H.264 Main, yuv420p, 720×1280, 30 fps, AAC e faststart. 6 935 204 bytes. A reprodução automática mantém-se silenciosa através de `muted`.
+- Filme: `assets/videos/projetos.mp4`, **Timeline 2.mp4 integral**, 27,61 s e 828 fotogramas. H.264 Main, yuv420p, 720×1280, 30 fps, AAC e faststart. 5 752 101 bytes. Esta troca evita repetir o Timeline 1 noutra secção.
+- Os dois originais em Downloads foram apenas lidos e permanecem intactos. Os caminhos dos ficheiros finais não mudaram.
 - Cada vídeo tem um fotograma de poster do próprio vídeo, utilizado exclusivamente nesse elemento. Não foram extraídos fotogramas para preencher o portefólio ou outras secções.
-- Todas as 12 fotografias reais fornecidas estão incluídas em JPG. As variantes WebP são versões reduzidas, sem alteração do conteúdo. As imagens de interiores sem correspondência confirmada são agrupadas por tipologia.
+- Todas as 12 fotografias reais fornecidas aparecem agora diretamente na página, cada uma uma única vez, entre Sobre, Portefólio e Transformação. A lightbox permite voltar a ampliá-las sem criar novos projetos. Os JPG e WebP existentes foram conservados byte a byte. A galeria distingue Projetos concluídos, Interiores e Em construção. As diferentes intervenções interiores continuam agrupadas apenas por tipologia.
 - A apresentação de fases utiliza a moradia de betão/alvenaria e a fotografia com volumes brancos e ripado. A correspondência visual baseia-se nos vãos de canto, volumetria e lajes; não há nomes, localizações, datas ou confirmação documental do projeto. Como os ângulos diferem, as imagens são apresentadas lado a lado e por seleção de fase, sem sobreposição por arrastamento.
 - Os quatro screenshots do Instagram servem de referência, estão guardados em `assets/references` e não aparecem como fotografias de projetos.
 - O logótipo mantém a imagem original, convertida para PNG. O recorte circular é apenas uma máscara de apresentação em CSS.

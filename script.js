@@ -61,6 +61,7 @@
     $$('.filters button').forEach(b => b.setAttribute('aria-pressed', String(b===btn)));
     const filter=btn.dataset.filter; let count=0;
     $$('.project').forEach(project => {project.hidden=filter!=='all'&&project.dataset.category!==filter;if(!project.hidden){project.classList.add('visible');count++;}});
+    $$('.portfolio-detail').forEach(detail => {detail.hidden=filter!=='all'&&detail.dataset.category!==filter; if(!detail.hidden)detail.classList.add('visible');});
     $('.project-grid').classList.toggle('is-filtered',filter!=='all');
     $('#filter-status').textContent=`${count} ${count===1?'seleção apresentada':'seleções apresentadas'}.`;
   }));
@@ -70,10 +71,10 @@
   }));
 
   const galleries = {
-    residencial: {title:'Moradia contemporânea',images:[['moradia-piscina.jpg','Fachada branca, ripado de madeira e piscina exterior.']]},
+    residencial: {title:'Moradia contemporânea · projetos concluídos',images:[['moradia-piscina.jpg','Fachada branca, ripado de madeira e piscina exterior.'],['moradia-volumes.jpg','Outro ângulo da mesma moradia: volumes brancos, madeira e envidraçados de canto.'],['moradia-fachada.jpg','A fachada da mesma moradia vista a partir da rua.']]},
     cozinhas: {title:'Cozinhas, matéria e função · seleção por tipologia',images:[['cozinha-madeira.jpg','Madeira, pedra clara e iluminação linear.'],['cozinha-contraste.jpg','Frentes brancas, superfícies escuras e ilha central. Outro espaço da seleção de cozinhas.']]},
     banho: {title:'Espaços de bem-estar',images:[['banheira-luz.jpg','Banheira de hidromassagem e entrada de luz natural.']]},
-    obra: {title:'O desenho em obra · registos por tipologia',images:[['piscina-em-obra.jpg','Moradia e piscina durante a construção.'],['estrutura-frontal.jpg','Registo da estrutura e dos vãos de uma moradia.'],['intervencao-interior.jpg','Intervenção interior em curso.'],['interior-em-obra.jpg','Paredes e instalações de um interior em remodelação.'],['remodelacao-em-obra.jpg','Registo de demolição e preparação de instalações. Espaços apresentados sem associação entre obras.']]}
+    obra: {title:'O desenho em obra · construção e remodelações',images:[['estrutura-frontal.jpg','Em construção: fachada e estrutura da moradia contemporânea.'],['piscina-em-obra.jpg','A mesma moradia, numa fase posterior de execução: fachada e piscina antes dos acabamentos.'],['intervencao-interior.jpg','Intervenção interior em curso. Registo apresentado por tipologia, sem associação à moradia.'],['interior-em-obra.jpg','Paredes e instalações de um interior em remodelação. Registo apresentado por tipologia.'],['remodelacao-em-obra.jpg','Demolição e preparação de instalações. Diferentes intervenções, sem associação entre obras.']]}
   };
   const dialog=$('.lightbox'), image=$('#lightbox-image'); let current, index=0, opener;
   function showImage(){
@@ -82,7 +83,7 @@
     $('#prev-image').hidden=$('#next-image').hidden=current.images.length<2;
   }
   function step(n){index=(index+n+current.images.length)%current.images.length;showImage();}
-  $$('.project-open').forEach(b=>b.addEventListener('click',()=>{opener=b;current=galleries[b.dataset.gallery];index=0;$('#gallery-title').textContent=current.title;showImage();dialog.showModal();document.body.classList.add('locked');$('#close-gallery').focus();}));
+  $$('.project-open').forEach(b=>b.addEventListener('click',()=>{opener=b;current=galleries[b.dataset.gallery];index=Number(b.dataset.start||0);$('#gallery-title').textContent=current.title;showImage();dialog.showModal();document.body.classList.add('locked');$('#close-gallery').focus();}));
   $('#close-gallery').addEventListener('click',()=>dialog.close());
   $('#prev-image').addEventListener('click',()=>step(-1));$('#next-image').addEventListener('click',()=>step(1));
   dialog.addEventListener('close',()=>{document.body.classList.remove('locked');opener?.focus({preventScroll:true});});
