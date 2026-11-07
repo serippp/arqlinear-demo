@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Uma seleção de arquitetura, construção e remodelações da ARQ LINEAR. Demonstração comercial não oficial, com materiais reais fornecidos.">
+  <meta name="theme-color" content="#141414">
+  <title>ARQ LINEAR — Arquitetura e Construção</title>
+  <link rel="icon" href="assets/logo/logo.png" type="image/png">
+  <link rel="preload" href="assets/fonts/editorial.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+  <div class="preloader" aria-hidden="true"><img src="assets/logo/logo.png" alt="" width="170" height="170"><span></span></div>
+  <header class="header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="ARQ LINEAR — início"><img src="assets/logo/logo.png" width="52" height="52" alt=""><span>ARQ LINEAR<small>ARQUITETURA & CONSTRUÇÃO</small></span></a>
+    <nav class="desktop-nav" aria-label="Navegação principal"><a href="#sobre">A visão</a><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a></nav>
+    <a class="header-contact" href="#contactos">Vamos conversar <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" inert hidden><span class="eyebrow">ARQ LINEAR / EXPLORAR</span><a href="#sobre">A visão <small>01</small></a><a href="#projetos">Projetos <small>02</small></a><a href="#servicos">Serviços <small>03</small></a><a href="#contactos">Contactos <small>04</small></a><p>Arquitetura. Construção. Novas possibilidades.</p></nav>
+  </header>
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow hero-enter">DAR FORMA AO QUE IMAGINA</p><h1 id="hero-title" class="hero-enter">Arquitetura<br>que inspira.<br><em>Espaços que<br>perduram.</em></h1><p class="hero-description hero-enter">Da visão à construção, criamos espaços onde a arquitetura, a funcionalidade e o detalhe se encontram.</p><div class="hero-actions hero-enter"><a class="button button-bronze" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a><a class="text-link" href="#contactos">Entrar em contacto <span aria-hidden="true">↗</span></a></div></div>
+      <figure class="hero-film"><div class="film-edge" aria-hidden="true"></div><video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/videos/hero-poster.jpg" aria-label="Percurso por interiores contemporâneos concluídos"><source src="assets/videos/hero.mp4" type="video/mp4"></video><button class="film-toggle" id="hero-toggle" aria-label="Pausar vídeo do hero"><span aria-hidden="true">Ⅱ</span></button><figcaption><span>LINHAS. MATÉRIA. LUZ.</span><span>01 / FILME</span></figcaption><p class="hero-video-message" hidden>Um olhar sobre os espaços.</p></figure>
+      <div class="hero-base"><span>ARQUITETURA & CONSTRUÇÃO</span><a href="#sobre">Uma visão, novas possibilidades <span aria-hidden="true">↓</span></a><span class="base-location">PORTFÓLIO SELECIONADO</span></div>
+    </section>
+
+    <section id="sobre" class="about section-wrap">
+      <div class="section-kicker reveal"><span class="section-number">01 / A VISÃO</span><span class="fine-line"></span></div>
+      <div class="about-heading reveal"><h2>A arquitetura<br>começa numa <em>visão.</em></h2><span class="mini-cross" aria-hidden="true">＋</span></div>
+      <figure class="about-image reveal"><img src="assets/images/moradia-fachada-small.webp" srcset="assets/images/moradia-fachada-small.webp 650w, assets/images/moradia-fachada.jpg 1125w" sizes="(max-width: 700px) 90vw, 42vw" width="1125" height="1479" alt="Fachada de moradia contemporânea com volumes brancos, ripado de madeira e caixilharia escura" loading="lazy"><figcaption>GEOMETRIA E MATERIALIDADE / ARQ LINEAR</figcaption></figure>
+      <div class="about-copy reveal"><p class="large-copy">O espaço como ponto<br>de partida. O detalhe<br>como expressão.</p><p>Na Arq Linear, a arquitetura e a construção encontram-se numa abordagem centrada na criação de espaços funcionais, contemporâneos e cuidadosamente pensados.</p><p>Do conceito à transformação, cada projeto representa uma oportunidade de valorizar ambientes e dar forma a novas possibilidades.</p><a class="text-link dark-link" href="#servicos">Da ideia à materialização <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section id="projetos" class="projects section-wrap">
+      <div class="section-kicker reveal"><span class="section-number">02 / PORTFÓLIO</span><span class="fine-line"></span></div>
+      <div class="section-heading reveal"><h2>Projetos que<br>definem <em>espaços.</em></h2><p>Uma seleção de espaços, materiais<br>e diferentes momentos de construção.</p></div>
+      <div class="filters reveal" role="group" aria-label="Filtrar portefólio"><button aria-pressed="true" data-filter="all">Todos <sup>04</sup></button><button aria-pressed="false" data-filter="residencial">Arquitetura residencial</button><button aria-pressed="false" data-filter="interiores">Interiores</button><button aria-pressed="false" data-filter="construcao">Construção e remodelação</button></div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+      <div class="project-grid">
+        <article class="project project-main reveal" data-category="residencial"><button class="project-open" data-gallery="residencial" aria-label="Abrir galeria Moradia contemporânea"><span class="image-wrap"><img src="assets/images/moradia-piscina-small.webp" srcset="assets/images/moradia-piscina-small.webp 650w, assets/images/moradia-piscina.jpg 1125w" sizes="(max-width: 700px) 90vw, 52vw" width="1125" height="1474" loading="lazy" alt="Moradia de dois pisos com fachadas brancas, madeira e piscina exterior"><span class="image-cta">Explorar <span>↗</span></span></span><span class="project-caption"><span><small>ARQUITETURA RESIDENCIAL</small><strong>Moradia contemporânea</strong></span><span class="project-index">01</span></span></button></article>
+        <article class="project project-offset reveal" data-category="interiores"><button class="project-open" data-gallery="cozinhas" aria-label="Abrir galeria Cozinhas, matéria e função"><span class="image-wrap"><img src="assets/images/cozinha-madeira-small.webp" srcset="assets/images/cozinha-madeira-small.webp 650w, assets/images/cozinha-madeira.jpg 1125w" sizes="(max-width: 700px) 90vw, 35vw" width="1125" height="1370" loading="lazy" alt="Cozinha com armários em madeira, ilha clara e iluminação linear"><span class="image-cta">Explorar <span>↗</span></span></span><span class="project-caption"><span><small>INTERIORES / SELEÇÃO POR TIPOLOGIA</small><strong>Cozinhas, matéria e função</strong></span><span class="project-index">02</span></span></button></article>
+        <article class="project project-bath reveal" data-category="interiores"><button class="project-open" data-gallery="banho" aria-label="Abrir galeria Espaços de bem-estar"><span class="image-wrap"><img src="assets/images/banheira-luz-small.webp" srcset="assets/images/banheira-luz-small.webp 650w, assets/images/banheira-luz.jpg 1125w" sizes="(max-width: 700px) 90vw, 35vw" width="1125" height="1496" loading="lazy" alt="Casa de banho com banheira de hidromassagem sob uma janela de grandes dimensões"><span class="image-cta">Explorar <span>↗</span></span></span><span class="project-caption"><span><small>INTERIORES</small><strong>Espaços de bem-estar</strong></span><span class="project-index">03</span></span></button></article>
+        <article class="project project-site reveal" data-category="construcao"><button class="project-open" data-gallery="obra" aria-label="Abrir galeria O desenho em obra"><span class="image-wrap"><img src="assets/images/piscina-em-obra-small.webp" srcset="assets/images/piscina-em-obra-small.webp 650w, assets/images/piscina-em-obra.jpg 1125w" sizes="(max-width: 700px) 90vw, 52vw" width="1125" height="1493" loading="lazy" alt="Moradia e piscina numa fase intermédia de construção"><span class="image-cta">Explorar <span>↗</span></span></span><span class="project-caption"><span><small>CONSTRUÇÃO E REMODELAÇÃO / REGISTOS DE OBRA</small><strong>O desenho em obra</strong></span><span class="project-index">04</span></span></button></article>
+      </div>
+      <p class="portfolio-note reveal">As seleções de interiores e de obra agrupam imagens por tipologia, sem atribuição de nomes ou localizações.</p>
+    </section>
+
+    <section class="transformation section-wrap" id="transformacao">
+      <div class="section-kicker reveal"><span class="section-number">03 / TRANSFORMAÇÃO</span><span class="fine-line"></span></div>
+      <div class="section-heading reveal"><h2>A transformação<br>está nos <em>detalhes.</em></h2><p>Da estrutura à expressão final.<br>A mesma moradia, em duas fases.</p></div>
+      <div class="phase-tabs reveal" role="group" aria-label="Fases da moradia"><button data-phase="both" aria-pressed="true">As duas fases</button><button data-phase="before" aria-pressed="false">Em construção</button><button data-phase="after" aria-pressed="false">Acabamentos exteriores</button></div>
+      <div class="phase-grid reveal" data-view="both"><figure class="phase-before"><img src="assets/images/moradia-estrutura-small.webp" srcset="assets/images/moradia-estrutura-small.webp 650w, assets/images/moradia-estrutura.jpg 1125w" sizes="(max-width:700px) 90vw, 44vw" width="1125" height="1476" loading="lazy" alt="Estrutura de betão e alvenaria da moradia, com caixilharias instaladas"><figcaption><span>01 / EM CONSTRUÇÃO</span><span>Estrutura e volume</span></figcaption></figure><figure class="phase-after"><img src="assets/images/moradia-volumes-small.webp" srcset="assets/images/moradia-volumes-small.webp 650w, assets/images/moradia-volumes.jpg 1125w" sizes="(max-width:700px) 90vw, 44vw" width="1125" height="1489" loading="lazy" alt="A mesma moradia com revestimento branco, ripado de madeira e envidraçados de canto"><figcaption><span>02 / ACABAMENTOS EXTERIORES</span><span>Matéria e identidade</span></figcaption></figure></div>
+      <p class="phase-note reveal">Perspetivas diferentes da mesma arquitetura. Os registos são apresentados lado a lado para preservar os enquadramentos originais.</p>
+    </section>
+
+    <section id="servicos" class="services section-wrap dark-section">
+      <div class="section-kicker reveal"><span class="section-number">04 / ÁREAS DE ATUAÇÃO</span><span class="fine-line"></span></div>
+      <div class="services-heading reveal"><h2>Da ideia à<br><em>materialização.</em></h2><p>Arquitetura, construção e transformação.<br>Diferentes dimensões de uma mesma visão.</p></div>
+      <div class="service-list"><article class="service reveal"><span>01</span><h3>Arquitetura</h3><p>Conceção e desenvolvimento de soluções arquitetónicas pensadas para diferentes espaços e necessidades.</p><span aria-hidden="true">↗</span></article><article class="service reveal"><span>02</span><h3>Construção</h3><p>Transformação de projetos em espaços reais, com atenção ao detalhe e à qualidade de execução.</p><span aria-hidden="true">↗</span></article><article class="service reveal"><span>03</span><h3>Remodelações</h3><p>Renovação de espaços existentes, valorizando a funcionalidade e a identidade arquitetónica.</p><span aria-hidden="true">↗</span></article><article class="service reveal"><span>04</span><h3>Projetos e investimento<br>imobiliário</h3><p>Desenvolvimento de projetos e investimento imobiliário, entre as atividades apresentadas pela Arq Linear.</p><span aria-hidden="true">↗</span></article></div>
+    </section>
+
+    <section id="filme" class="motion section-wrap dark-section">
+      <div class="section-kicker reveal"><span class="section-number">05 / EM MOVIMENTO</span><span class="fine-line"></span></div>
+      <div class="motion-layout"><div class="motion-copy reveal"><h2>A arquitetura<br>ganha <em>vida.</em></h2><p>Um percurso pela transformação dos espaços. Do que se imagina ao que se pode viver.</p><button class="text-link" id="play-film">Reproduzir filme <span aria-hidden="true">▷</span></button><span class="motion-meta">REGISTOS REAIS / ARQ LINEAR<br>00:19 / FORMATO VERTICAL</span></div><div class="motion-frame reveal"><video id="project-video" controls playsinline preload="none" poster="assets/videos/projetos-poster.jpg" aria-label="Filme da transformação de interiores da ARQ LINEAR"><source src="assets/videos/projetos.mp4" type="video/mp4"><p>O seu navegador não permite reproduzir este vídeo. <a href="assets/videos/projetos.mp4">Abrir o filme MP4</a>.</p></video><p id="film-error" hidden>Não foi possível carregar o filme. <a href="assets/videos/projetos.mp4">Abrir o vídeo</a>.</p></div></div>
+    </section>
+
+    <section id="contactos" class="contact section-wrap"><div class="section-kicker reveal"><span class="section-number">06 / VAMOS CONVERSAR</span><span class="fine-line"></span></div><div class="contact-content reveal"><p class="eyebrow">CADA GRANDE PROJETO COMEÇA COM UMA CONVERSA.</p><h2>Tem um projeto<br><em>em mente?</em></h2><a class="contact-cta" href="https://www.instagram.com/arquitecturalinear/" target="_blank" rel="noopener noreferrer">Falar com a Arq Linear <span aria-hidden="true">↗</span><span class="sr-only"> (Instagram, abre numa nova janela)</span></a><p class="instagram-label">INSTAGRAM / @ARQUITECTURALINEAR</p></div></section>
+  </main>
+  <footer class="footer section-wrap"><div class="footer-top"><a href="#inicio" class="footer-brand">ARQ LINEAR<span>Arquitetura e Construção</span></a><nav aria-label="Navegação de rodapé"><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a><a href="#contactos">Contactos</a><a href="https://www.instagram.com/arquitecturalinear/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav><a class="back-top" href="#inicio" aria-label="Voltar ao início">↑</a></div><div class="footer-bottom"><p>Demonstração comercial não oficial. Sujeita a aprovação da marca.</p><span>ARQUITETURA · CONSTRUÇÃO · POSSIBILIDADES</span></div></footer>
+  <dialog class="lightbox" aria-label="Galeria de fotografias"><div class="lightbox-head"><span id="gallery-title"></span><button id="close-gallery" aria-label="Fechar galeria">Fechar <span aria-hidden="true">×</span></button></div><div class="lightbox-stage"><button id="prev-image" aria-label="Fotografia anterior">←</button><figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button id="next-image" aria-label="Fotografia seguinte">→</button></div><div class="lightbox-bottom"><span id="image-count"></span><span>← → EXPLORAR <span class="desktop-hint">/ ESC FECHAR</span></span></div></dialog>
+  <noscript><style>.preloader{display:none}.reveal{opacity:1;transform:none}.project-open{cursor:default}.filters,.phase-tabs,.film-toggle{display:none}</style><p class="noscript-note">Para ampliar as galerias, ative JavaScript. Pode consultar todas as fotografias na pasta assets/images.</p></noscript>
+</body>
+</html>
